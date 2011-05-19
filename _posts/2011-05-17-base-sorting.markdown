@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Base Sorting
-categories: module: base
+categories: base
 ---
 
 stub
