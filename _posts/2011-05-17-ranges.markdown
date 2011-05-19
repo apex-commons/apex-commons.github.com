@@ -1,0 +1,7 @@
+---
+layout: default
+title: Ranges
+categories: math
+---
+
+stub
