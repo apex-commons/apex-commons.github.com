@@ -4,6 +4,7 @@ title: ArrayUtils
 categories: api
 ---
 
->>This is a stub!  Please contribute to me!
-
-test 123 abc
+*Static Method: objectToString*
+* Parameters: List<Object> objects
+* Returns: List<String>
+* Purpose: Converts a List<> of any variable type to a list of String type
