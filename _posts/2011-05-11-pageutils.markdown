@@ -103,3 +103,26 @@ You might very much want to know what those messages are, perhaps to write to th
         return '{' + returnString + '}';
     }
 </pre>
+
+If you only want to determine the level of a particular message, isMessageAtLevelOrHigher(message, level) does that as well
+<pre class="brush: java">
+    
+    global static Boolean isMessageAtLevelOrHigher(ApexPages.Message message, ApexPages.Severity level){
+        if(level == null || message == null){
+            return false;
+        }
+        ApexPages.Severity msgLevel = message.getSeverity();
+        while(true){
+            if(level == msgLevel){
+                return true;    
+            }
+            if(msgLevel == ApexPages.Severity.CONFIRM){msgLevel = ApexPages.Severity.WARNING;}
+            else if(msgLevel == ApexPages.Severity.INFO){msgLevel = ApexPages.Severity.WARNING;}
+            else if(msgLevel == ApexPages.Severity.WARNING){msgLevel = ApexPages.Severity.ERROR;}
+            else if(msgLevel == ApexPages.Severity.ERROR){msgLevel = ApexPages.Severity.FATAL;}
+            else { break; }
+        }
+        return false;
+    }
+</pre>
+(This ^ looks like it would be *really* useful for Unit Tests...)
