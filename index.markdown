@@ -3,7 +3,11 @@ layout: default
 title: Welcome
 ---
 
-[apex-commons](/) is a collection of open source [force.com](http://force.com) components organized into git repositories.  The top level repository is referred to as base and all other repositories reference it.  To get started, see [Install](/install).  We certainly welcome [contributions](/contribute) including contributions to documentation (this site is rendered using github pages and it's source can be viewed [here](https://github.com/apex-commons/apex-commons.github.com)).  apex-commons was inspired by the [Apache Commons](http://commons.apache.org/) project and was also ported in May 2011 from [apex-lang](http://code.google.com/p/apex-lang/).
+[apex-commons](/) is a collection of __open source__ [force.com](http://force.com) code organized into git repositories on github.  The top level repository is referred to as base and all other repositories reference it.  
+
+### If you simply want to leverage the code, see [Install](/install).  
+
+Contributions welcome!  All code is hosted on github, including this documentation you are viewing.  [Click here to start contributing.](/contribute)
 
 Repositories:
 --------------
@@ -14,3 +18,5 @@ Repositories:
 [`query`](https://github.com/apex-commons/query)
 [`sort`](https://github.com/apex-commons/sort)
 [`visualforce`](https://github.com/apex-commons/visualforce)
+
+[`apex-commons.github.com`](https://github.com/apex-commons/apex-commons.github.com) (the source for this site)
