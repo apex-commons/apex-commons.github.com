@@ -8,8 +8,7 @@ First, let’s start with just about the simplest example possible. The below co
 
 Demo: http://rvdemo-developer-edition.na6.force.com/AccountPaginationDemo
 <pre class="brush: java">
-<!-- ======================================================= -->
-<!-- Controller -->
+-- Controller --
 global class AccountPaginationDemo implements SObjectPaginatorListener {
 	global List<Account> accounts {get;private set;}
 	global SObjectPaginator paginator {get;private set;}
@@ -28,34 +27,4 @@ global class AccountPaginationDemo implements SObjectPaginatorListener {
 		}
 	}
 }
-<!-- Page: page -->
-<apex:page showHeader="false" sidebar="false" standardStylesheets="true" controller="AccountPaginationDemo">
-	<apex:composition template="DemoTemplate">
-		<apex:define name="body">
-			<apex:form >
-			    <apex:pageBlock title="Accounts" id="accounts">
-			        <apex:pageBlockTable value="{!accounts}" var="account">
-						<apex:column >
-							<apex:facet name="header">Name</apex:facet>
-							<apex:outputPanel >{!account.name}</apex:outputPanel>
-						</apex:column>
-						<apex:facet name="footer">
-							<apex:outputPanel >
-								<apex:outputText value="Page {!paginator.pageNumberDisplayFriendly} of {!paginator.pageCount} in {!paginator.recordCount} Results"/>
-								<apex:outputPanel >    </apex:outputPanel>
-								<apex:commandLink value="Previous" action="{!paginator.previous}"
-									rendered="{!IF(paginator.hasPrevious,'true','false')}"/>
-								<apex:outputText value="Previous" rendered="{!IF(NOT(paginator.hasPrevious),'true','false')}"/>
-								<apex:outputPanel > | </apex:outputPanel>
-								<apex:commandLink value="Next" action="{!paginator.next}"
-									rendered="{!IF(paginator.hasNext,'true','false')}"/>
-								<apex:outputText value="Next" rendered="{!IF(NOT(paginator.hasNext),'true','false')}"/>
-							</apex:outputPanel>
-						</apex:facet>
-			        </apex:pageBlockTable>
-			    </apex:pageBlock>
-			</apex:form>
-		</apex:define>
-	</apex:composition>
-</apex:page>
 </pre>
