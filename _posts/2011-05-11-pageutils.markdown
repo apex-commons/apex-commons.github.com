@@ -30,3 +30,37 @@ global class AccountPaginationDemo implements SObjectPaginatorListener {
 </pre>
 
 (apologies in advance - modifying VF code to work here is ... interesting)
+
+<pre class="brush: java">
+&lt;!-- Page: page --&gt;
+&lt;!-- Page: page --&gt;
+&lt;apex:page showHeader="false" sidebar="false" standardStylesheets="true" controller="AccountPaginationDemo"&gt;
+	&lt;apex:composition template="DemoTemplate"&gt;
+		&lt;apex:define name="body"&gt;
+			&lt;apex:form &gt;
+			    &lt;apex:pageBlock title="Accounts" id="accounts"&gt;
+			        &lt;apex:pageBlockTable value="{!accounts}" var="account"&gt;
+						&lt;apex:column &gt;
+							&lt;apex:facet name="header"&gt;Name&lt;/apex:facet&gt;
+							&lt;apex:outputPanel &gt;{!account.name}&lt;/apex:outputPanel&gt;
+						&lt;/apex:column&gt;
+						&lt;apex:facet name="footer"&gt;
+							&lt;apex:outputPanel &gt;
+								&lt;apex:outputText value="Page {!paginator.pageNumberDisplayFriendly} of {!paginator.pageCount} in {!paginator.recordCount} Results"/&gt;
+								&lt;apex:outputPanel &gt;    &lt;/apex:outputPanel&gt;
+								&lt;apex:commandLink value="Previous" action="{!paginator.previous}"
+									rendered="{!IF(paginator.hasPrevious,'true','false')}"/&gt;
+								&lt;apex:outputText value="Previous" rendered="{!IF(NOT(paginator.hasPrevious),'true','false')}"/&gt;
+								&lt;apex:outputPanel &gt; | &lt;/apex:outputPanel&gt;
+								&lt;apex:commandLink value="Next" action="{!paginator.next}"
+									rendered="{!IF(paginator.hasNext,'true','false')}"/&gt;
+								&lt;apex:outputText value="Next" rendered="{!IF(NOT(paginator.hasNext),'true','false')}"/&gt;
+							&lt;/apex:outputPanel&gt;
+						&lt;/apex:facet&gt;
+			        &lt;/apex:pageBlockTable&gt;
+			    &lt;/apex:pageBlock&gt;
+			&lt;/apex:form&gt;
+		&lt;/apex:define&gt;
+	&lt;/apex:composition&gt;
+&lt;/apex:page&gt;
+</pre>
