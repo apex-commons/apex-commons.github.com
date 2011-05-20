@@ -21,6 +21,5 @@ Example Usage
 
 <code>
 GlobalVariable.put('MyKey','My Value');
-
 System.debug('Here is the value: ' + GlobalVariable.get('MyKey'));
 </code>
