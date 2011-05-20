@@ -4,4 +4,4 @@ title: Foo__c
 categories: api
 ---
 
->>This is a stub!  Please contribute to me!
+Custom object needed for testing (?)
