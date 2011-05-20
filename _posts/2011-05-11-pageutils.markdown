@@ -74,15 +74,19 @@ You might very much want to know what those messages are, perhaps to write to th
         return messagesToString(ApexPages.getMessages());
     }
     
+    global static String messagesToString(){
+        return messagesToString(ApexPages.getMessages());
+    }
+    
     global static String messagesToString(ApexPages.Message[] messages){
         if(messages == null){
             return 'null';
         }
-        if( messages.size() <= 0){
+        if( messages.size() &lt;= 0){
             return '{empty}';
         }
         String returnString = '';
-        for(Integer i = 0; i < messages.size(); i++){
+        for(Integer i = 0; i &lt; messages.size(); i++){
             if(i != 0){ returnString += '; '; }
             returnString += 'ApexPages.Message[';
             returnString += i;
