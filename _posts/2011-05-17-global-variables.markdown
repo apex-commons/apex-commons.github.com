@@ -7,9 +7,9 @@ categories: environment
 Overview
 --------
 
-_Problem_:  You need global variables which persist across Apex instantiations, users and sessions.
+_Problem:_  You need global variables which persist across Apex instantiations, users and sessions.
 
-_Solution_:  Create a [List Custom Setting](http://www.salesforce.com/us/developer/docs/apexcode/index.htm) object which accepts Name Value pairs.
+_Solution:_  Create a [List Custom Setting](http://www.salesforce.com/us/developer/docs/apexcode/index.htm) object which accepts Name Value pairs.
 
 Implementation
 --------------
@@ -19,10 +19,10 @@ The implementation requires two resources.  The first is a List Custom Settings 
 Example Usage
 -------------
 
-<code>
-GlobalVariable.put('MyKey','My Value');
-System.debug('Here is the value: ' + GlobalVariable.get('MyKey'));
-</code>
+<pre class="brush: java">
+  GlobalVariable.put('MyKey','My Value');
+  System.debug('Here is the value: ' + GlobalVariable.get('MyKey'));
+</pre>
 
 
 Description
