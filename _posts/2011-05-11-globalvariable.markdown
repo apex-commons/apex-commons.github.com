@@ -7,7 +7,7 @@ categories: api
 Overview
 --------
 
-_Problem_:  You need global variables which persist across Apex instantiations.
+_Problem_:  You need global variables which persist across Apex instantiations, users and sessions.
 
 _Solution_:  Create a [List Custom Setting](http://www.salesforce.com/us/developer/docs/apexcode/index.htm) object which accepts Name Value pairs.
 
