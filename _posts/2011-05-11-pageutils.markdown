@@ -46,3 +46,24 @@ Posting messages - when someone clicks Submit() or does something that causes yo
         ApexPages.addMessage(new ApexPages.message(ApexPages.severity.FATAL,message));
     }
 </pre>
+
+You might also want to check to see which messages your page has accumulated (perhaps in a Unit Test - &lt;guesssing/&gt;); PageUtils() has methods for checking for specific types of messages
+<pre class="brush: java">    
+    global static ApexPages.Message[] getErrorMessages(){
+        return PageUtils.getMessagesAtLevel(ApexPages.Severity.ERROR, true);
+    }
+
+    global static Boolean hasErrorMessages(){
+        final ApexPages.Message[] errorMessages = getErrorMessages();
+        return errorMessages != null && errorMessages.size() > 0;
+    }
+    
+    global static ApexPages.Message[] getErrorMessagesOnly(){
+        return PageUtils.getMessagesAtLevel(ApexPages.Severity.ERROR, false);
+    }
+    
+    global static Boolean hasErrorMessagesOnly(){
+    	final ApexPages.Message[] errorMessagesOnly = getErrorMessagesOnly();
+        return errorMessagesOnly != null && errorMessagesOnly.size() > 0;
+    }   
+</pre>
