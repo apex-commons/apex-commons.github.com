@@ -4,4 +4,11 @@ title: Sorting Primitives
 categories: sort
 ---
 
-stub
+>>This is a stub!  Please contribute to me!!
+
+Description
+----------------
+
+#### Apex Classes
+
+[`PrimitiveComparator`](/api/PrimitiveComparator.cls)

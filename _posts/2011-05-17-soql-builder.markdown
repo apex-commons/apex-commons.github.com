@@ -13,6 +13,26 @@ Code that builds a SOQL query via string concatenation is error prone.  Many tim
 
 Main class is [SoqlBuilder](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder.cls).
 
+#### Apex Classes
+
+[`AndCondition`](https://github.com/apex-commons/query/blob/master/src/classes/AndCondition.cls)
+[`Condition`](https://github.com/apex-commons/query/blob/master/src/classes/Condition.cls)
+[`ConditionGroup`](https://github.com/apex-commons/query/blob/master/src/classes/ConditionGroup.cls)
+[`DateFormula`](https://github.com/apex-commons/query/blob/master/src/classes/DateFormula.cls)
+[`Field`](https://github.com/apex-commons/query/blob/master/src/classes/Field.cls)
+[`FieldCondition`](https://github.com/apex-commons/query/blob/master/src/classes/FieldCondition.cls)
+[`NestableCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NestableCondition.cls)
+[`NotCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NotCondition.cls)
+[`Operator`](https://github.com/apex-commons/query/blob/master/src/classes/Operator.cls)
+[`OrCondition`](https://github.com/apex-commons/query/blob/master/src/classes/OrCondition.cls)
+[`OrderBy`](https://github.com/apex-commons/query/blob/master/src/classes/OrderBy.cls)
+[`SetCondition`](https://github.com/apex-commons/query/blob/master/src/classes/SetCondition.cls)
+[`Soqlable`](https://github.com/apex-commons/query/blob/master/src/classes/Soqlable.cls)
+[`SoqlBuilder`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder.cls)
+[`SoqlOptions`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlOptions.cls)
+[`SoqlUtils`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlUtils.cls)
+[`UnitOfTime`](https://github.com/apex-commons/query/blob/master/src/classes/UnitOfTime.cls)
+
 Basic Example
 ================
 
@@ -582,39 +602,3 @@ Enabled by default: Yes
 .toSoql(new SoqlOptions().escapeSingleQuotes())
 //-&gt;SELECT id FROM account WHERE name like 'O\'Neal'
 </pre>
-
-
-Code
-==========
-
-### Apex Classes
-
-* [AndCondition](https://github.com/apex-commons/query/blob/master/src/classes/AndCondition.cls)
-* [AndConditionTest](https://github.com/apex-commons/query/blob/master/src/classes/AndConditionTest.cls)
-* [Condition](https://github.com/apex-commons/query/blob/master/src/classes/Condition.cls)
-* [ConditionGroup](https://github.com/apex-commons/query/blob/master/src/classes/ConditionGroup.cls)
-* [ConditionGroupTest](https://github.com/apex-commons/query/blob/master/src/classes/ConditionGroupTest.cls)
-* [DateFormula](https://github.com/apex-commons/query/blob/master/src/classes/DateFormula.cls)
-* [DateFormulaTest](https://github.com/apex-commons/query/blob/master/src/classes/DateFormulaTest.cls)
-* [Field](https://github.com/apex-commons/query/blob/master/src/classes/Field.cls)
-* [FieldCondition](https://github.com/apex-commons/query/blob/master/src/classes/FieldCondition.cls)
-* [FieldConditionTest](https://github.com/apex-commons/query/blob/master/src/classes/FieldConditionTest.cls)
-* [FieldTest](https://github.com/apex-commons/query/blob/master/src/classes/FieldTest.cls)
-* [NestableCondition](https://github.com/apex-commons/query/blob/master/src/classes/NestableCondition.cls)
-* [NotCondition](https://github.com/apex-commons/query/blob/master/src/classes/NotCondition.cls)
-* [NotConditionTest](https://github.com/apex-commons/query/blob/master/src/classes/NotConditionTest.cls)
-* [Operator](https://github.com/apex-commons/query/blob/master/src/classes/Operator.cls)
-* [OrCondition](https://github.com/apex-commons/query/blob/master/src/classes/OrCondition.cls)
-* [OrConditionTest](https://github.com/apex-commons/query/blob/master/src/classes/OrConditionTest.cls)
-* [OrderBy](https://github.com/apex-commons/query/blob/master/src/classes/OrderBy.cls)
-* [OrderByTest](https://github.com/apex-commons/query/blob/master/src/classes/OrderByTest.cls)
-* [SetCondition](https://github.com/apex-commons/query/blob/master/src/classes/SetCondition.cls)
-* [SetConditionTest](https://github.com/apex-commons/query/blob/master/src/classes/SetConditionTest.cls)
-* [Soqlable](https://github.com/apex-commons/query/blob/master/src/classes/Soqlable.cls)
-* [SoqlBuilder](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder.cls)
-* [SoqlBuilderTest](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilderTest.cls)
-* [SoqlOptions](https://github.com/apex-commons/query/blob/master/src/classes/SoqlOptions.cls)
-* [SoqlOptionsTest](https://github.com/apex-commons/query/blob/master/src/classes/SoqlOptionsTest.cls)
-* [SoqlUtils](https://github.com/apex-commons/query/blob/master/src/classes/SoqlUtils.cls)
-* [SoqlUtilsTest](https://github.com/apex-commons/query/blob/master/src/classes/SoqlUtilsTest.cls)
-* [UnitOfTime](https://github.com/apex-commons/query/blob/master/src/classes/UnitOfTime.cls)

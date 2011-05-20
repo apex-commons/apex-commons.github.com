@@ -4,4 +4,12 @@ title: Type Conversion
 categories: base
 ---
 
-stub
+>>This is a stub!  Please contribute to me!!
+
+Description
+----------------
+
+#### Apex Classes
+
+[`BooleanUtilsTest`](/api/BooleanUtilsTest.cls)
+[`NumberUtilsTest`](/api/NumberUtilsTest.cls)

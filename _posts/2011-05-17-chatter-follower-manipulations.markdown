@@ -4,4 +4,12 @@ title: Chatter Follower Manipulations
 categories: chatter
 ---
 
-stub
+>>This is a stub!  Please contribute to me!!
+
+Description
+----------------
+
+#### Apex Classes
+
+[`ChatterUtils`](/api/ChatterUtils.cls)
+[`GroupUtils`](/api/GroupUtils.cls)
