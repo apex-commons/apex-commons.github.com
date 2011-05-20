@@ -67,3 +67,35 @@ You might also want to check to see whether your page has accumulated any errors
         return errorMessagesOnly != null && errorMessagesOnly.size() > 0;
     }   
 </pre>
+
+You might very much want to know what those messages are, perhaps to write to the system log for reference
+<pre class="brush: java">
+    global static String messagesToString(){
+        return messagesToString(ApexPages.getMessages());
+    }
+    
+    global static String messagesToString(ApexPages.Message[] messages){
+        if(messages == null){
+            return 'null';
+        }
+        if( messages.size() <= 0){
+            return '{empty}';
+        }
+        String returnString = '';
+        for(Integer i = 0; i < messages.size(); i++){
+            if(i != 0){ returnString += '; '; }
+            returnString += 'ApexPages.Message[';
+            returnString += i;
+            returnString += ']: (summary=';
+            returnString += messages[i].getSummary(); 
+            returnString += ',componentLabel=';
+            returnString += messages[i].getComponentLabel(); 
+            returnString += ',severity=';
+            returnString += messages[i].getSeverity(); 
+            returnString += ',detail=';
+            returnString += messages[i].getDetail(); 
+            returnString += ')';
+        }
+        return '{' + returnString + '}';
+    }
+</pre>
