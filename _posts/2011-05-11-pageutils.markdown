@@ -28,3 +28,5 @@ global class AccountPaginationDemo implements SObjectPaginatorListener {
 	}
 }
 </pre>
+
+(apologies in advance - modifying VF code to work here is ... interesting)
