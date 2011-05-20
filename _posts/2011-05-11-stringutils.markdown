@@ -4,8 +4,8 @@ title: StringUtils
 categories: api
 ---
 
-    global static String 	abbreviate(String str, Integer maxWidth)
-      Abbreviates a String using ellipses.
+*bq.global static String 	abbreviate(String str, Integer maxWidth)
+      Abbreviates a String using ellipses. *
 
        global static String 	abbreviate(String str, Integer offset, Integer maxWidth)
           Abbreviates a String using ellipses.
