@@ -4,11 +4,11 @@ title: StringUtils
 categories: api
 ---
 
-> global static String 	abbreviate(String str, Integer maxWidth)
-> Abbreviates a String using ellipses. 
+<pre> global static String 	abbreviate(String str, Integer maxWidth)
+ Abbreviates a String using ellipses. </pre>
 
-       global static String 	abbreviate(String str, Integer offset, Integer maxWidth)
-          Abbreviates a String using ellipses.
+<pre>global static String 	abbreviate(String str, Integer offset, Integer maxWidth)
+          Abbreviates a String using ellipses.</pre>
 
 
 
