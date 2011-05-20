@@ -6,7 +6,7 @@ categories: api
 
 	static String 	abbreviate(String str, int maxWidth)
         Abbreviates a String using ellipses.
-{:ruby}
+	{:markdown}
 
 
 
