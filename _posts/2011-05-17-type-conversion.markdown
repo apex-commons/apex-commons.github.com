@@ -11,5 +11,5 @@ Description
 
 #### Apex Classes
 
-[`BooleanUtilsTest`](/api/BooleanUtilsTest)
-[`NumberUtilsTest`](/api/NumberUtilsTest)
+[`BooleanUtilsTest`](/api/booleanutilstest)
+[`NumberUtilsTest`](/api/numberutilstest)

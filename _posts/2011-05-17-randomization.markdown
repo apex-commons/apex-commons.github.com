@@ -11,4 +11,4 @@ Description
 
 #### Apex Classes
 
-[`RandomUtils`](/api/RandomUtils)
+[`RandomUtils`](/api/randomutils)

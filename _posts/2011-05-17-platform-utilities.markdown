@@ -11,10 +11,10 @@ Description
 
 #### Apex Classes
 
-[`EmailUtils`](/api/EmailUtils)
-[`LanguageUtils`](/api/LanguageUtils)
-[`PageUtils`](/api/PageUtils)
-[`StopWatch`](/api/StopWatch)
-[`UrlUtils`](/api/UrlUtils)
-[`UserUtils`](/api/UserUtils)
-[`RandomUtils`](/api/RandomUtils)
+[`EmailUtils`](/api/emailutils)
+[`LanguageUtils`](/api/languageutils)
+[`PageUtils`](/api/pageutils)
+[`StopWatch`](/api/stopwatch)
+[`UrlUtils`](/api/urlutils)
+[`UserUtils`](/api/userutils)
+[`RandomUtils`](/api/randomutils)

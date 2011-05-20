@@ -11,5 +11,5 @@ Description
 
 #### Apex Classes
 
-[`ChatterUtils`](/api/ChatterUtils)
-[`GroupUtils`](/api/GroupUtils)
+[`ChatterUtils`](/api/chatterutils)
+[`GroupUtils`](/api/grouputils)

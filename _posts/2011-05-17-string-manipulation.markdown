@@ -11,8 +11,8 @@ Description
 
 #### Apex Classes
 
-[`Character`](/api/Character)
-[`RandomStringUtils`](/api/RandomStringUtils)
-[`StringBuffer`](/api/StringBuffer)
-[`StringUtils`](/api/StringUtils)
-[`WordUtils`](/api/WordUtils)
+[`Character`](/api/character)
+[`RandomStringUtils`](/api/randomstringutils)
+[`StringBuffer`](/api/stringbuffer)
+[`StringUtils`](/api/stringutils)
+[`WordUtils`](/api/wordutils)

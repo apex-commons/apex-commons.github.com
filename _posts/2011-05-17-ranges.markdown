@@ -11,7 +11,7 @@ Description
 
 #### Apex Classes
 
-[`DecimalRange`](/api/DecimalRange)
-[`DoubleRange`](/api/DoubleRange)
-[`IntegerRange`](/api/IntegerRange)
-[`LongRange`](/api/LongRange)
+[`DecimalRange`](/api/decimalrange)
+[`DoubleRange`](/api/doublerange)
+[`IntegerRange`](/api/integerrange)
+[`LongRange`](/api/longrange)

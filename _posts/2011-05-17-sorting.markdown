@@ -13,6 +13,6 @@ Description
 
 #### Apex Classes
 
-[`ArrayUtils`](/api/ArrayUtils)
-[`ISObjectComparator`](/api/ISObjectComparator)
-[`ObjectComparator`](/api/ObjectComparator)
+[`ArrayUtils`](/api/arrayutils)
+[`ISObjectComparator`](/api/isobjectcomparator)
+[`ObjectComparator`](/api/objectcomparator)

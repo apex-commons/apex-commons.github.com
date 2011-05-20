@@ -11,4 +11,4 @@ Description
 
 #### Apex Classes
 
-[`DatabaseUtilsTest`](/api/DatabaseUtilsTest)
+[`DatabaseUtilsTest`](/api/databaseutilstest)

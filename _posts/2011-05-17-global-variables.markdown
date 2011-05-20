@@ -11,5 +11,5 @@ Description
 
 #### Apex Classes
 
-[`GlobalVariable__c`](/api/GlobalVariable__c.object)
-[`GlobalVariable`](/api/GlobalVariable)
+[`GlobalVariable__c`](/api/globalvariable__c.object)
+[`GlobalVariable`](/api/globalvariable)

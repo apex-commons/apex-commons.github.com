@@ -11,4 +11,4 @@ Description
 
 #### Apex Classes
 
-[`PrimitiveComparator`](/api/PrimitiveComparator)
+[`PrimitiveComparator`](/api/primitivecomparator)
