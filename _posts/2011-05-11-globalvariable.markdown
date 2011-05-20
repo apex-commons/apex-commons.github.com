@@ -5,7 +5,7 @@ categories: api
 ---
 
 Overview
-________
+--------
 
 _Problem_:  You need global variables which persist across Apex instantiations.
 
@@ -14,4 +14,4 @@ _Solution_:  Create a [List Custom Setting](http://www.salesforce.com/us/develop
 Implementation
 --------------
 
-The implementation requires two resources.  The first is a List Custom Settings object called GlobalVariable__c
+The implementation requires two resources.  The first is a List Custom Settings object called [GlobalVariable__c](https://github.com/apex-commons/base/blob/master/src/objects/GlobalVariable__c.object) and a utility class [GlobalVariable](https://github.com/apex-commons/base/blob/master/src/classes/GlobalVariable.cls).
