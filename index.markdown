@@ -9,6 +9,8 @@ title: Welcome
 
 Contributions welcome!  All code is hosted on github, including this documentation you are viewing.  [Click here to start contributing.](/contribute)
 
+Some text
+
 Repositories:
 --------------
 [`base`](https://github.com/apex-commons/base)
