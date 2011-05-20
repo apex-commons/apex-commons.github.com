@@ -7,17 +7,22 @@ categories: api
          global static String 	abbreviate(String str, Integer maxWidth)
             Abbreviates a String using ellipses.
 
+
          global static String 	abbreviate(String str, Integer offset, Integer maxWidth)
       Abbreviates a String using ellipses.
+
 
          global static String 	capitalize(String str)
             Capitalizes a String changing the first letter to title case as per Character.toTitleCase(char).
 
+
          global static String 	center(String str, Integer size)
             Centers a String in a larger String of size size using the space character (' ').
 
+
          global static String 	center(String str, Integer size, String padStr)
             Centers a String in a larger String of size size.
+
 
          global static String 	charAt(String str, Integer index)
             Centers a String in a larger String of size size using the space character (' ').
@@ -66,11 +71,13 @@ categories: api
 
          global static Integer 	indexOfDifference(String[] strs)
 	Compares all Strings in an array and returns the index at which the Strings begin to differ.
+	
          global static Integer 	indexOfDifference(String str1, String str2)
 	 Compares two Strings, and returns the index at which the Strings begin to differ.
 
          global static boolean 	equals(String str1, String str2)
      Compares two Strings, returning true if they are equal.
+
          global static boolean 	equalsIgnoreCase(String str1, String str2)
      Compares two Strings, returning true if they are equal ignoring the case.
 
@@ -85,7 +92,6 @@ categories: api
 
          global static int 	getLevenshteinDistance(String s, String t)
  Find the Levenshtein distance between two Strings.
-
 
          global static Integer 	indexOfAnyBut(String str, String searchChars)
           Search a String to find the first index of any character not in the given set of characters.
@@ -105,7 +111,6 @@ Find the first index of any of a set of potential substrings.
          global static boolean 	isAlpha(String str)
  Checks if the String contains only unicode letters.
 
-
          global static boolean 	isAlphaSpace(String str)
  Checks if the String contains only unicode letters and space (' ').
 												
@@ -120,9 +125,12 @@ Checks if the string contains only ASCII printable characters.
 
          global static boolean 	isNumeric(String str)
 Checks if the String contains only unicode digits.
-																						         global static boolean 	isNumericSpace(String str)
+		
+		global static boolean 	isNumericSpace(String str)
 Checks if the String contains only unicode digits or space (' ').
-																						         global static boolean 	isWhitespace(String str)
+		
+		
+		 global static boolean 	isWhitespace(String str)
 Checks if the String contains only whitespace.
 
          global static String joinArray(Object[] objectArray)
@@ -139,7 +147,6 @@ Checks if the String contains only whitespace.
          global static String joinStrings(Set<String> strings, String separator)
     Joins the elements of the provided array into a single String containing the provided list of elements.
 
-
          global static String joinSet(Set<Blob> blobSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
 	
@@ -154,23 +161,18 @@ Checks if the String contains only whitespace.
 
          global static String joinSet(Set<Decimal> decimalSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
-
 	
          global static String joinSet(Set<Double> doubleSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
-
 																							
          global static String joinSet(Set<ID> idSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
 
-	
          global static String joinSet(Set<Integer> integerSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
-
 	
          global static String joinSet(Set<Long> longSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
-
 	
          global static String joinSet(Set<Time> timeSet, String separator)
     Joins the elements of the provided Set into a single String containing the provided list of elements.
@@ -210,9 +212,11 @@ Left pad a String with a specified String.
 															
          global static int 	length(String str)
 Gets a String's length or 0 if the String is null.
-																		         global static String 	lowerCase(String str)
+
+		 global static String 	lowerCase(String str)
 Converts a String to lower case as per String.toLowerCase().
-																					         global static String 	remove(String str, String remove)
+		
+		 global static String 	remove(String str, String remove)
 Removes all occurrences of a substring from within the source string.
 																					
          global static String 	removeStart(String str, String remove)
@@ -238,7 +242,7 @@ Replaces a String with another String inside a larger String, once.
 
          global static String replaceEach(String text, String[] searchList, String[] replacementList)																																			           Replaces all occurrences of Strings within another String.
 
-         global static String 	replaceEachRepeatedly(String text, String[] searchList, String[] replacementList)														Replaces all occurrences of Strings within another String.
+         global static String 	replaceEachRepeatedly(String text, String[] searchList, String[] replacementList)																																			           Replaces all occurrences of Strings within another String.
 
          global static String replaceEach(String text, String[] searchList, String[] replacementList)																																								           Replaces all occurrences of Strings within another String.
 
@@ -246,18 +250,20 @@ Replaces a String with another String inside a larger String, once.
 See: http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true#reverse%28%29
 
          global static String 	reverseDelimited(String str, String separatorChars)
-Reverses a String that is delimited by a specific character.														
+Reverses a String that is delimited by a specific character.																																											
+
          global static String 	right(String str, int len)
 Gets the rightmost len characters of a String.
-															         global static String 	rightPad(String str, int size)
+																																																																			
+         global static String 	rightPad(String str, int size)
  Right pad a String with spaces (' ').
 
          global static String 	rightPad(String str, int size, String padStr)
- Right pad a String with a specified String.																
+ Right pad a String with a specified String.																															
+																															
          global static String 	swapCase(String str)
 Swaps the case of a String changing upper and title case to lower case, and lower case to upper case.
 																																																																							
-
          global static boolean 	startsWithIgnoreCase(String str, String prefix)
 Case insensitive check if a String starts with a specified prefix.
 
@@ -297,7 +303,8 @@ Splits the provided text into an array, separator string specified.
 
          global static String[] 	splitByWholeSeparator(String str, String separator, int max)
 Splits the provided text into an array, separator string specified.
-																global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator)
+															
+																	         global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator)
 Splits the provided text into an array, separator string specified.
 																	
 																			         global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator, int max)
@@ -333,7 +340,6 @@ Gets a substring from the specified String avoiding exceptions.
          global static String 	substring(String str, int start, int end)
 Gets a substring from the specified String avoiding exceptions.								
 
-
          global static String 	substringBefore(String str, String separator)
 Gets the substring before the first occurrence of a separator.																												
 
@@ -353,8 +359,11 @@ Gets the String that is nested in between two Strings.
 
          global static String[] 	substringsBetween(String str, String open, String close)																										          Searches a String for substrings delimited by a start and end tag, returning all matching substrings in an array.
 
-         global static String 	trim(String str)																														          Removes control characters (char <= 32) from both ends of this String, handling null by returning null.																														         global static List<String> trimAll(List<String> aList)
+         global static String 	trim(String str)																														          Removes control characters (char <= 32) from both ends of this String, handling null by returning null.																											
+																												
+         global static List<String> trimAll(List<String> aList)
     Removes control characters (char <= 32) from all Strings in List, handling null by returning null.																											
+
          global static Set<String> trimAll(Set<String> aList)
     Removes control characters (char <= 32) from all Strings in Set, handling null by returning null.																											
 
@@ -377,7 +386,8 @@ Gets the String that is nested in between two Strings.
 Turn string into array of characters (also Strings).
 
          global static String trimLower(String str)
-Removes control characters (char <= 32) from both ends of this String, handling null by returning null, and returning Lowercase. 																							
+Removes control characters (char <= 32) from both ends of this String, handling null by returning null, and returning Lowercase. 																											
+									
          global static String stripMarkup(String str)
 Remove all markup
 
