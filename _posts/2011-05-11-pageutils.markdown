@@ -29,10 +29,7 @@ global class AccountPaginationDemo implements SObjectPaginatorListener {
 }
 </pre>
 
-(apologies in advance - modifying VF code to work here is ... interesting)
-
 <pre class="brush: java">
-&lt;!-- Page: page --&gt;
 &lt;!-- Page: page --&gt;
 &lt;apex:page showHeader="false" sidebar="false" standardStylesheets="true" controller="AccountPaginationDemo"&gt;
 	&lt;apex:composition template="DemoTemplate"&gt;
