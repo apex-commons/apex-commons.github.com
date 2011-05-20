@@ -4,6 +4,8 @@ title: PageUtils
 categories: api
 ---
 
+[This is cribbed extensively (read 'completely') from Richard's blog entry: http://richardvanhook.com/tag/pagination/]
+
 First, let’s start with just about the simplest example possible. The below controller runs a SOQL query on Account and divides the results into pages of 15 records each via SObjectPaginator. The handlePageChange() method is called by the paginator as part of the setRecords() invocation as well as when the user clicks on the Next and Previous links.
 
 Demo: http://rvdemo-developer-edition.na6.force.com/AccountPaginationDemo
