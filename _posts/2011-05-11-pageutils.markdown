@@ -10,3 +10,39 @@ Class containing utilities that you don't have to write from scratch.  (But you 
 
 Main class is [PageUtils](https://github.com/apex-commons/visualforce/PageUtils.cls).
 
+Starting from the top, then, with redirect()
+<pre class="brush: java">
+global static PageReference redirect(String url){
+        PageReference pageRef = new PageReference(url);
+        pageRef.setRedirect(true);
+        return pageRef;
+}
+</pre>
+
+When you need to send someone to a new page dynamically, you need to get a PageReference and set their page to it.
+Hence, redirect();
+
+Posting messages - when someone clicks Submit() or does something that causes your page to do some work, you often need to give them information w/o necessarily redirecting them to a new page; addMessages() does that for you, and PageUtils has methods to set specific messages w/o (you guessed it) writing it from scratch:
+
+<pre class="brush: java">
+
+    global static void addConfirm(String message){
+        ApexPages.addMessage(new ApexPages.message(ApexPages.severity.CONFIRM,message));
+    }
+    
+    global static void addInfo(String message){
+        ApexPages.addMessage(new ApexPages.message(ApexPages.severity.INFO,message));
+    }
+    
+    global static void addWarning(String message){
+        ApexPages.addMessage(new ApexPages.message(ApexPages.severity.WARNING,message));
+    }
+    
+    global static void addError(String message){
+        ApexPages.addMessage(new ApexPages.message(ApexPages.severity.ERROR,message));
+    }
+    
+    global static void addFatal(String message){
+        ApexPages.addMessage(new ApexPages.message(ApexPages.severity.FATAL,message));
+    }
+</pre>
