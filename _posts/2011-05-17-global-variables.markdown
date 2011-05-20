@@ -12,4 +12,4 @@ Description
 #### Apex Classes
 
 [`GlobalVariable__c`](/api/GlobalVariable__c.object)
-[`GlobalVariable`](/api/GlobalVariable.cls)
+[`GlobalVariable`](/api/GlobalVariable)

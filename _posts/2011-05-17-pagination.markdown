@@ -11,7 +11,7 @@ Description
 
 #### Apex Classes
 
-[`ObjectPaginator`](/api/ObjectPaginator.cls)
-[`ObjectPaginatorListener`](/api/ObjectPaginatorListener.cls)
-[`SObjectPaginator`](/api/SObjectPaginator.cls)
-[`SObjectPaginatorListener`](/api/SObjectPaginatorListener.cls)
+[`ObjectPaginator`](/api/ObjectPaginator)
+[`ObjectPaginatorListener`](/api/ObjectPaginatorListener)
+[`SObjectPaginator`](/api/SObjectPaginator)
+[`SObjectPaginatorListener`](/api/SObjectPaginatorListener)

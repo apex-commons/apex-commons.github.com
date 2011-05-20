@@ -11,8 +11,8 @@ Description
 
 #### Apex Classes
 
-[`ArrayUtils`](/api/ArrayUtils.cls)
-[`MapUtils`](/api/MapUtils.cls)
-[`SetUtils`](/api/SetUtils.cls)
-[`SObjectUtils`](/api/SObjectUtils.cls)
-[`SystemUtils`](/api/SystemUtils.cls)
+[`ArrayUtils`](/api/ArrayUtils)
+[`MapUtils`](/api/MapUtils)
+[`SetUtils`](/api/SetUtils)
+[`SObjectUtils`](/api/SObjectUtils)
+[`SystemUtils`](/api/SystemUtils)

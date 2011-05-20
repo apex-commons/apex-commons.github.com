@@ -11,8 +11,8 @@ Description
 
 #### Apex Classes
 
-[`IllegalArgumentException`](/api/IllegalArgumentException.cls)
-[`IllegalStateException`](/api/IllegalStateException.cls)
-[`IndexOutOfBoundsException`](/api/IndexOutOfBoundsException.cls)
-[`InvalidCharacterStringException`](/api/InvalidCharacterStringException.cls)
-[`NumberFormatException`](/api/NumberFormatException.cls)
+[`IllegalArgumentException`](/api/IllegalArgumentException)
+[`IllegalStateException`](/api/IllegalStateException)
+[`IndexOutOfBoundsException`](/api/IndexOutOfBoundsException)
+[`InvalidCharacterStringException`](/api/InvalidCharacterStringException)
+[`NumberFormatException`](/api/NumberFormatException)

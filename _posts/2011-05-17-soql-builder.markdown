@@ -11,27 +11,27 @@ A developer friendly tool for creating SOQL queries as strings.  Use whenever yo
 
 Code that builds a SOQL query via string concatenation is error prone.  Many times you'll forget a comma, misplace an AND, mis-format a date string, or worst of all, forgot to escape user input.  These types of mistakes are silly because they happen to everyone and they seem to happen over and over again.  SOQL Builder's value lay in mitigating these mistakes.  
 
-Main class is [SoqlBuilder](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder.cls).
+Main class is [SoqlBuilder](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder).
 
 #### Apex Classes
 
-[`AndCondition`](https://github.com/apex-commons/query/blob/master/src/classes/AndCondition.cls)
-[`Condition`](https://github.com/apex-commons/query/blob/master/src/classes/Condition.cls)
-[`ConditionGroup`](https://github.com/apex-commons/query/blob/master/src/classes/ConditionGroup.cls)
-[`DateFormula`](https://github.com/apex-commons/query/blob/master/src/classes/DateFormula.cls)
-[`Field`](https://github.com/apex-commons/query/blob/master/src/classes/Field.cls)
-[`FieldCondition`](https://github.com/apex-commons/query/blob/master/src/classes/FieldCondition.cls)
-[`NestableCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NestableCondition.cls)
-[`NotCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NotCondition.cls)
-[`Operator`](https://github.com/apex-commons/query/blob/master/src/classes/Operator.cls)
-[`OrCondition`](https://github.com/apex-commons/query/blob/master/src/classes/OrCondition.cls)
-[`OrderBy`](https://github.com/apex-commons/query/blob/master/src/classes/OrderBy.cls)
-[`SetCondition`](https://github.com/apex-commons/query/blob/master/src/classes/SetCondition.cls)
-[`Soqlable`](https://github.com/apex-commons/query/blob/master/src/classes/Soqlable.cls)
-[`SoqlBuilder`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder.cls)
-[`SoqlOptions`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlOptions.cls)
-[`SoqlUtils`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlUtils.cls)
-[`UnitOfTime`](https://github.com/apex-commons/query/blob/master/src/classes/UnitOfTime.cls)
+[`AndCondition`](https://github.com/apex-commons/query/blob/master/src/classes/AndCondition)
+[`Condition`](https://github.com/apex-commons/query/blob/master/src/classes/Condition)
+[`ConditionGroup`](https://github.com/apex-commons/query/blob/master/src/classes/ConditionGroup)
+[`DateFormula`](https://github.com/apex-commons/query/blob/master/src/classes/DateFormula)
+[`Field`](https://github.com/apex-commons/query/blob/master/src/classes/Field)
+[`FieldCondition`](https://github.com/apex-commons/query/blob/master/src/classes/FieldCondition)
+[`NestableCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NestableCondition)
+[`NotCondition`](https://github.com/apex-commons/query/blob/master/src/classes/NotCondition)
+[`Operator`](https://github.com/apex-commons/query/blob/master/src/classes/Operator)
+[`OrCondition`](https://github.com/apex-commons/query/blob/master/src/classes/OrCondition)
+[`OrderBy`](https://github.com/apex-commons/query/blob/master/src/classes/OrderBy)
+[`SetCondition`](https://github.com/apex-commons/query/blob/master/src/classes/SetCondition)
+[`Soqlable`](https://github.com/apex-commons/query/blob/master/src/classes/Soqlable)
+[`SoqlBuilder`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlBuilder)
+[`SoqlOptions`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlOptions)
+[`SoqlUtils`](https://github.com/apex-commons/query/blob/master/src/classes/SoqlUtils)
+[`UnitOfTime`](https://github.com/apex-commons/query/blob/master/src/classes/UnitOfTime)
 
 Basic Example
 ================

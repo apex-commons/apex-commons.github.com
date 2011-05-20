@@ -11,6 +11,6 @@ Description
 
 #### Apex Classes
 
-[`SObjectComparator`](/api/SObjectComparator.cls)
-[`SObjectSortByFieldComparator`](/api/SObjectSortByFieldComparator.cls)
-[`SObjectSortByNameComparator`](/api/SObjectSortByNameComparator.cls)
+[`SObjectComparator`](/api/SObjectComparator)
+[`SObjectSortByFieldComparator`](/api/SObjectSortByFieldComparator)
+[`SObjectSortByNameComparator`](/api/SObjectSortByNameComparator)

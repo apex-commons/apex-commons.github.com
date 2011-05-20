@@ -12,5 +12,5 @@ Description
 #### Apex Classes
 
 [`Foo__c`](/api/Foo__c.object)
-[`HttpUtils`](/api/HttpUtils.cls)
-[`TestUtils`](/api/TestUtils.cls)
+[`HttpUtils`](/api/HttpUtils)
+[`TestUtils`](/api/TestUtils)

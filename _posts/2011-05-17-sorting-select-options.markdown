@@ -11,4 +11,4 @@ Description
 
 #### Apex Classes
 
-[`SelectOptionComparator`](/api/SelectOptionComparator.cls)
+[`SelectOptionComparator`](/api/SelectOptionComparator)
