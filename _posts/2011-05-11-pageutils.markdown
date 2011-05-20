@@ -47,7 +47,7 @@ Posting messages - when someone clicks Submit() or does something that causes yo
     }
 </pre>
 
-You might also want to check to see which messages your page has accumulated (perhaps in a Unit Test - &lt;guesssing/&gt;); PageUtils() has methods for checking for specific types of messages
+You might also want to check to see which messages your page has accumulated (perhaps in a Unit Test); PageUtils() has methods for checking for specific types of messages
 <pre class="brush: java">    
     global static ApexPages.Message[] getErrorMessages(){
         return PageUtils.getMessagesAtLevel(ApexPages.Severity.ERROR, true);
