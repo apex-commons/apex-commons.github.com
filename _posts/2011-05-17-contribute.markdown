@@ -27,7 +27,7 @@ $ git clone git@github.com:<em>username</em>/apex-commons.github.com.git
 $ cd apex-commons.github.com
 </pre>
 
-* Install the [jekyll](https://github.com/mojombo/jekyll/wiki/Configuration) ruby gem (obviously requires ruby be installed beforehand) and then start jekyll as a web server.
+* Install the [jekyll](https://github.com/mojombo/jekyll/wiki/Install) ruby gem (obviously requires ruby be installed beforehand) and then start jekyll as a web server.
 
 <pre class="terminal">
 $ gem install jekyll
@@ -36,7 +36,7 @@ $ jekyll --server
 
 * Go to [http://localhost:4000](http://localhost:4000) and hopefully you see something that looks remotely like this site.
 
-* Make some changes!  A basic understanding of jekyll is required but don't worry, its easier than you're probably thinking.  See XXXXXXXXX
+* Make some changes!  A basic understanding of jekyll is required but don't worry, its easier than you're probably thinking.  See the jekyll [usage guide](https://github.com/mojombo/jekyll/wiki/Usage).
 
 * Commit and push your changes back to github
 
