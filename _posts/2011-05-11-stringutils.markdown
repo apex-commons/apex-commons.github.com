@@ -238,7 +238,7 @@ Replaces a String with another String inside a larger String, once.
 
          global static String replaceEach(String text, String[] searchList, String[] replacementList)																																			           Replaces all occurrences of Strings within another String.
 
-         global static String 	replaceEachRepeatedly(String text, String[] searchList, String[] replacementList)																																			           Replaces all occurrences of Strings within another String.
+         global static String 	replaceEachRepeatedly(String text, String[] searchList, String[] replacementList)														Replaces all occurrences of Strings within another String.
 
          global static String replaceEach(String text, String[] searchList, String[] replacementList)																																								           Replaces all occurrences of Strings within another String.
 
@@ -246,17 +246,14 @@ Replaces a String with another String inside a larger String, once.
 See: http://download.oracle.com/javase/6/docs/api/java/lang/StringBuffer.html?is-external=true#reverse%28%29
 
          global static String 	reverseDelimited(String str, String separatorChars)
-Reverses a String that is delimited by a specific character.																																											
-
+Reverses a String that is delimited by a specific character.														
          global static String 	right(String str, int len)
 Gets the rightmost len characters of a String.
-																																																																			
-         global static String 	rightPad(String str, int size)
+															         global static String 	rightPad(String str, int size)
  Right pad a String with spaces (' ').
 
          global static String 	rightPad(String str, int size, String padStr)
- Right pad a String with a specified String.																															
-																															
+ Right pad a String with a specified String.																
          global static String 	swapCase(String str)
 Swaps the case of a String changing upper and title case to lower case, and lower case to upper case.
 																																																																							
@@ -300,8 +297,7 @@ Splits the provided text into an array, separator string specified.
 
          global static String[] 	splitByWholeSeparator(String str, String separator, int max)
 Splits the provided text into an array, separator string specified.
-															
-																	         global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator)
+																global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator)
 Splits the provided text into an array, separator string specified.
 																	
 																			         global static String[] 	splitByWholeSeparatorPreserveAllTokens(String str, String separator, int max)
@@ -357,11 +353,8 @@ Gets the String that is nested in between two Strings.
 
          global static String[] 	substringsBetween(String str, String open, String close)																										          Searches a String for substrings delimited by a start and end tag, returning all matching substrings in an array.
 
-         global static String 	trim(String str)																														          Removes control characters (char <= 32) from both ends of this String, handling null by returning null.																											
-																												
-         global static List<String> trimAll(List<String> aList)
+         global static String 	trim(String str)																														          Removes control characters (char <= 32) from both ends of this String, handling null by returning null.																														         global static List<String> trimAll(List<String> aList)
     Removes control characters (char <= 32) from all Strings in List, handling null by returning null.																											
-
          global static Set<String> trimAll(Set<String> aList)
     Removes control characters (char <= 32) from all Strings in Set, handling null by returning null.																											
 
@@ -384,8 +377,7 @@ Gets the String that is nested in between two Strings.
 Turn string into array of characters (also Strings).
 
          global static String trimLower(String str)
-Removes control characters (char <= 32) from both ends of this String, handling null by returning null, and returning Lowercase. 																											
-									
+Removes control characters (char <= 32) from both ends of this String, handling null by returning null, and returning Lowercase. 																							
          global static String stripMarkup(String str)
 Remove all markup
 
