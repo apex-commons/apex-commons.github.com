@@ -20,7 +20,7 @@ Steps to contribute to the documentation
 
 * Fork the [apex-commons.github.com](https://github.com/apex-commons/apex-commons.github.com) repo ([guide to forking](http://help.github.com/fork-a-repo/))
 
-* Grab the fork (the following command will download the repo to your local drive)
+* Open a terminal window and grab the fork (the following command will download the repo to your local drive)
 
 <pre class="terminal">
 $ git clone git@github.com:<em>username</em>/apex-commons.github.com.git
@@ -30,7 +30,7 @@ $ cd apex-commons.github.com
 * Install the [jekyll](https://github.com/mojombo/jekyll/wiki/Install) ruby gem (obviously requires ruby be installed beforehand) and then start jekyll as a web server.
 
 <pre class="terminal">
-$ gem install jekyll
+$ sudo gem install jekyll
 $ jekyll --server
 </pre>
 
@@ -51,11 +51,13 @@ $ git push origin master
 Steps to contribute to the code
 --------------------------
 
-<span class="intro">The following steps use the base repo.  The same steps apply to all other repositories as well.</span>
-
 * [Create a new developer edition salesforce org](http://developer.force.com) and [clear out the existing code in that org](/remove-code-from-fresh-salesforce-org).
 
-* Fork one of the following repos (we'll be using base in following steps).
+* Open Force.com IDE and when prompted to select a workspace, select the apex-commons folder you created (i.e. the /some/path/apex-commons folder).
+
+<span class="intro">The following steps use the base repo.  The same steps apply to all other repositories as well.</span>
+
+* Fork one of the following repos (for this example, we'll be using [`base`](https://github.com/apex-commons/base)).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[`base`](https://github.com/apex-commons/base)
 [`chatter`](https://github.com/apex-commons/chatter)
@@ -65,24 +67,44 @@ Steps to contribute to the code
 [`sort`](https://github.com/apex-commons/sort)
 [`visualforce`](https://github.com/apex-commons/visualforce)
 
-* Go to your apex-commons local folder.
+* Create a new project with the exact same name as the repo (**important!**).  In this example, name it base.
+
+* Enter your credentials and press Next.
+
+<img src="/images/CreateProject1.jpg" />
+
+<br/>
+<br/>
+
+* Choose None and press Finish
+
+<img src="/images/CreateProject2.jpg" />
+
+<br/>
+<br/>
+
+* Open a terminal window and go to your apex-commons local folder.
 
 <pre class="terminal">
 $ cd /some/path/apex-commons
 </pre>
 
-* Grab the fork (the following command will download the repo to your local drive)
+* Add the code to your Force.com IDE project folder
 
 <pre class="terminal">
-$ git clone git@github.com:<em>username</em>/base.git
+$ cd base
+$ git init
+$ git remote add base git@github.com:<em>username</em>/base.git
+$ git pull base master
 $ cd base
 </pre>
 
-* Open Force.com IDE and select the apex-commons folder you created as your workspace.
+* Refresh your Force.com project (Upon refresh, the code will be saved to your salesforce org).
 
-* Create a new project with the exact same name as the repo (__important!__), in this example, name it base.
+<img src="/images/RefreshProject.jpg" />
 
-* Enter the credentials of the new developer edition org you created.  When prompted to select components, choose None.
+<br/>
+<br/>
 
 * Make some changes!
 
@@ -91,7 +113,7 @@ $ cd base
 <pre class="terminal">
 $ git add .
 $ git commit -m 'my first commit to apex-commons!'
-$ git push origin master
+$ git push base master
 </pre>
 
 * Submit pull request ([guide to pull requests](http://help.github.com/pull-requests/))
